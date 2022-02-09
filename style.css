@@ -1,0 +1,32 @@
+.handmade_arrow_body {
+  display: grid;
+  place-items: center;
+  place-content: center;
+}
+
+.arrow {
+  --border-size: 0.5rem;
+  --size-line: calc(var(--border-size) * 4);
+  --color-errows: rgb(219, 15, 15);
+  border-left: var(--border-size) solid var(--color-errows);
+  border-bottom: var(--border-size) solid var(--color-errows);
+  width: var(--size-line);
+  height: var(--size-line);
+  transform: rotate(135deg);
+}
+
+.up {
+  transform: rotate(135deg);
+}
+
+.right {
+  transform: rotate(225deg);
+}
+
+.down {
+  transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(45deg);
+}
